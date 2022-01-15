@@ -856,7 +856,7 @@ class PlayerManager(object):
                     )
                 else:
                     title = self._video.item.get("Name")
-                    subtitle = str(self._video.item.get("ProductionYear", ""))
+                    subtitle = str(self._video.item.get("ProductionYear", "Unknown Year"))
                 send_presence(
                     title,
                     subtitle,
